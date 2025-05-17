@@ -1,0 +1,18 @@
+{
+  "name": "pdt-dev-presentations-202505",
+  "version": "1.0.0",
+  "description": "プロダクト開発事業部向けプレゼン資料",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semba-yui/pdt-dev-presentations-202505.git"
+  },
+  "author": "Yui Semba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semba-yui/pdt-dev-presentations-202505/issues"
+  },
+  "homepage": "https://github.com/semba-yui/pdt-dev-presentations-202505#readme"
+}
