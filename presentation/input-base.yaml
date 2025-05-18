@@ -1,0 +1,253 @@
+presentation:
+  title: With AI 時代のプロダクトエンジニア
+  subtitle: AIと共創するエンジニアリング
+
+  author: 
+    name: 仙波 琉一朗
+    company: 株式会社ビーンズラボ / 株式会社ライトカフェ
+    title: WEB開発事業部2G3課 課長 / プロダクト開発事業部3G TL
+    email: semba@beanslabo.co.jp
+
+  objective:
+    - 生成AIを「学習・思考整理・実装・ドキュメント化」に活用できる具体像を示す
+    - コードを書く作業から "プロダクト価値最大化" へのシフトを促す
+    - 聴講者が翌日 PoC を動かし、有料ツールでも試す行動へ導く
+
+  target_audience:
+    role: Webアプリ開発エンジニア (FE/BE/Mobile)
+    experience: "3-5 年"
+    current_AI_usage:
+      - ChatGPT
+      - "GitHub Copilot (補完)"
+    pain_points:
+      - "領域偏り (FE/BE/Mobile)"
+      - "プロダクト視å点不足"
+    key_message:
+      - プログラミングは終わらない。
+      - AI Agent を共同開発者にして、次の抽象化レイヤへ乗り換えよう。
+
+  agenda:
+    - time: "0–1 min"
+      purpose: "視覚と感情で一瞬で惹きつける"
+      title: With AI 時代のプロダクトエンジニア ~AIと共創するエンジニアリング~
+      content:
+        - タイトルの提を提示し、狙いを一言で示す
+      assets:
+        - type: "hero_background"
+          description: "抽象化の階段を暗示するグラデーション or イラスト"
+        - type: "title_text"
+          description: "タイトル＋短い副題（16字以内）"
+    - time: "1–2 min"
+      part: "目次共有"
+      purpose: "航海図を示し安心感を与える"
+      title: 目次
+      content:
+        - "この 30 分で扱う主要セクションを箇条書きで表示し、全体像を先に見せる"
+      assets:
+        - type: "animated_timeline"
+          description: "左右スクロールで各セクションが光る Lottie アニメ。目次をクリックで各セクションに遷移可能。"
+
+    - time: "2–3 min"
+      purpose: "話者のストーリーで信頼を獲得"
+      title: 自己紹介@経歴
+      content:
+        - 居住歴:
+          - 沖縄 生まれ @ 1998年
+          - 沖縄 → 香川 → 沖縄 → 熊本 → 沖縄 → 千葉 (今)
+        - 経歴:
+          - 2021/04 ~ ビーンズラボ 新卒入社
+          - 2021/08 ~ 配送システム バックエンド
+          - 2022/12 ~ 配送システム@リアーキT バックエンド
+          - 2023/12 ~ 小売ポータルアプリ バックエンド
+          - 2025/02 ~ 電力会社社内システム@エンジニア
+          - 2025/03 ~ 小売社内システム@アーキテクト
+        - 趣味:
+          - NoteBook LM で自炊した PodCast を聞くこと
+            - "経済産業省のデジタル経済レポート「データに飲み込まれる世界、聖域なきデジタル市場の生存戦略」がおすすめ"
+            - "全106ページの pdf を読み込ませて移動中に流し聞きできる" 
+      assets:
+        - type: "headshot_photo"
+          description: "800 × 800 px 正方形、円形マスク＋AIブルー枠線"
+          resource: "./assets/images/headshot/real.png"
+
+    - time: "3–5 min"
+      purpose: "自分のAI課金歴を簡単に紹介し、実際に AI を使っているということを示す"
+      title: 自己紹介@AI課金歴
+      content:
+        - 現役枠:
+          - チャット枠:
+            - ChatGPT Pro
+              - Chat (o3)
+              - 画像生成
+              - Codex
+            - Claude Pro
+              - MCP Client
+            - Gemini Advanced
+              - Deep Research
+          - 拡張機能枠:
+            - GitHub Copilot
+          - エディタ枠:
+            - Cursor Pro
+        - 課金をやめた枠:
+          - エディタ枠
+            - Windsurf
+          - 拡張機能枠:
+            - JetBrains Junie
+            - Clune
+          - ウェブアプリ開発枠:
+            - Bolt.new
+            - v0.dev
+          - その他:
+            - DeepSeek
+        - 気になる枠
+          - Claude Code
+          - Figma
+          - Dify
+          - n8n
+          - Devin
+      assets:
+        - type: "headshot_photo"
+          description: "800 × 800 px 正方形、円形マスク＋AIブルー枠線"
+          resource: "./assets/images/headshot/chatgpt.png"
+    - time: "5–10 min"
+      part: "アイスブレイク：進化速度のギャップ"
+      purpose: "ChatGPT の進化スピードを示し、AI時代の『秒で変わる』感覚を体感。これから先の未来がどうなるのか想像させる。"
+      content: |
+        ChatGPT が公開（2022-11）から 2 年弱で o3 / o4-mini へ到達。
+        iPhone で言えば "初代発売→3GS世代" と同じ期間。
+        進化スピードを実感してもらう。
+      assets:
+        - type: "dual_timeline_slider"
+          description: >
+            左: ChatGPT (2022-11 → 2025-05)  
+            右: iPhone (2007-06 → 2025-05)  
+            スクロールで年表が同期スクロール。各マイルストーンをピクト＋短文で表示。
+            iPhone は画像付き。
+        - iPhone:
+          - model: iPhone 2G
+            release: "2007-06-29"
+            description: "初代 iPhone。日本未発売モデル。"
+            assets: "assets/images/iphone/2G.png"
+            geekbench6_single: 130
+          - model: iPhone 3G
+            release: "2008-07-11"
+            description: "日本で始めた発売されたモデル。"
+            assets: "assets/images/iphone/3G.png"
+            geekbench6_single: 147
+          - model: iPhone 3GS
+            release: "2009-06-19"
+            assets: "assets/images/iphone/3GS.svg"
+            geekbench6_single: 231
+          - model: iPhone 4
+            release: "2010-06-24"
+            assets: "assets/images/iphone/4.png"
+            geekbench6_single: 226
+          - model: iPhone 4S
+            release: "2011-06-29"
+            description: "Siriと iCloudが搭載。iPhone人気が高まり始めたモデル。翌年にはパズドラがリリースされる。"
+            assets: "assets/images/iphone/4S.png"
+            geekbench6_single: 290
+          - model: iPhone 6s
+            release: "2015-09-25"
+            assets: "assets/images/iphone/6s.png"
+            geekbench6_single: 885 
+          - model: iPhone X
+            release: "2017-09-12"
+            assets: "assets/images/iphone/x.png"
+            geekbench6_single: 1000
+          - model: iPhone 13 Pro
+            release: "2021-09-24"
+            assets: "assets/images/iphone/13Pro.png"
+            geekbench6_single: 2339
+          - model: iPhone 16 Pro
+            release: "2023-09-12"
+            assets: "assets/images/iphone/16Pro.png"
+            description: "現行 iPhone 最新モデル"
+            geekbench6_single: 3452
+        - ChatGPT:
+          - model: GPT-3.5 
+            release: "2022-11-30"
+            description: "一般に無料公開された最初のモデル。"
+            mmlu: 46
+          - model: GPT-4
+            release: "2023-03-14"
+            mmlu: 69
+            description: "一般に有料公開された最初のモデル。"
+          - model: GPT-4o
+            release: "2024-05-13"
+            mmlu: 77
+            description: "音声や画像などマルチモーダル性能が大きく向上。"
+          - model: o1
+            release: "2024-12-17"
+            mmlu: 84
+            description: "初の推論モデルとして発表。"
+          - model: o1-mini
+            release: "2025-01-15"
+            mmlu: 74
+            description: "o1の軽量モデル。"
+          - model: GPT-4.5
+            release: "2025-04-02"
+            mmlu: 85.1
+            description: "非推論のベースモデル。IQ よりも EQ が大きく向上。"
+          - model: o3
+            release: "2025-04-16"
+            mmlu: 88.8
+            description: "最新の推論モデル。Deep Research と組み合わせた複雑な問題解決に対応する力が大きく向上。"
+          - model: o4-mini-high
+            release: "2025-04-16"
+            mmlu: 85.2
+            description: "o4の軽量モデル。軽量モデルでありながら、推論の速度と精度が向上。"
+    - time: "6–10 min"
+      part: "時代背景：抽象化の階段 × O’Reilly"
+      purpose: "変化の必然性をビジュアルストーリで刻む"
+      assets:
+        - type: "parallax_graphic"
+          description: "多層タイムライン（Punch Card→AI Agent）、スクロールで奥行き"
+        - type: "quote_card"
+          description: "Tim O’Reilly 写真＋“再発明”フレーズ、左右スライドイン"
+        - type: "comparison_meter"
+          description: "『10年で◯倍の抽象化速度』動的カウンタ"
+
+repository: https://github.com/semba-yui/pdt-dev-presentations-202505
+
+reference_links:
+  - title: AI 2027
+    url: https://ai-2027.com/
+  - title: AI-Agent時代のエンジニアの役割と野性
+    url: https://speakerdeck.com/jgeem/ai-agentshi-dai-noenzinianoyi-ge-toye-xing
+  - title: AI系情報収集方法の社内アンケート・手軽な情報収集の仕組み【2025年版】
+    url: https://zenn.dev/mkj/articles/41e3f0abb0dd0e
+  - title: AI時代の仕事術（10方式）
+    url: https://zenn.dev/mkj/articles/984233194267d0
+  - title: CLINEに全部賭けろ
+    url: https://zenn.dev/mizchi/articles/all-in-on-cline
+  - title: 「AIがあるんだからもっと安く早く作れるでしょ？」と非エンジニアに言われた時に読む（読んでもらう）記事
+    url: https://qiita.com/ku_suke/items/577bdb839b411fe75e44
+  - title: DeNA南場智子が語る「AI時代の会社経営と成長戦略」全文書き起こし | フルスイング by DeNA
+    url: https://fullswing.dena.com/archives/100153/
+  - title: MCPサーバーで開発効率が3倍に！2025年必須の10大ツール
+    url: https://qiita.com/takuya77088/items/58fd06fb46cecdd957d8
+  - title: AI時代のプログラミング教育 / programming education in ai era
+    url: https://speakerdeck.com/kishida/programming-education-in-ai-era
+  - title: AI時代を生きるエンジニアに必要なマインドセット
+    url: https://zenn.dev/ks0318/articles/5aed8395ea418c
+  - title: The Software Engineering Identity Crisis
+    url: https://annievella.com/posts/the-software-engineering-identity-crisis/
+  - title: Why We're All-In on MCP
+    url: https://mastra.ai/blog/mastra-mcp
+  - title: AI時代はプログラミングスキルがさらに重要になる
+    url: https://zenn.dev/dyoshikawa/articles/programming-skills-will-be-more-valueable
+  - title: 「バイブワーキング」のすすめ
+    url: https://zenn.dev/globis/articles/c6a8e891984326
+  - title: AIコーディングの理想と現実
+    url: https://speakerdeck.com/tomohisa/aikodeingunoli-xiang-toxian-shi
+  - title: AIとどう付き合っていくか2025春
+    url: https://www.docswell.com/s/nekoruri/Z4V7M1-2025-04-21-ssmjp-ai
+  - title: Software Architecture in an AI-Driven World
+    url: https://speakerdeck.com/atty303/software-architecture-in-an-ai-driven-world
+  - title: 【深津 貴之 氏】AI時代におけるデザイナーの新たな役割｜UI UX Camp! 2025｜ニジボックス主催
+    url: https://youtu.be/XdceJzcaqXw?si=7CZfjzPV6rStDky8
+  - title: The tech giants are wrong AI won't replace engineers
+    url: https://www.raconteur.net/technology/ai-replace-engineers
+  - title: リクルートHD、約4000人の人員削減、3分の1のコードをAIで作成
+    url: https://newspicks.com/trends/2252/

@@ -1,0 +1,98 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+branding:
+  colors:
+    # コントラスト比: foreground vs #FFFFFF, #1A1A1A で 4.5:1 以上
+    primary:   "#005BAC"  # メインブルー (logo)
+    on_primary: "#FFFFFF"
+    secondary: "#F5F7FA"  # ほぼ白の薄グレー
+    on_secondary: "#1A1A1A"
+    accent:    "#26C6DA"  # CTA ボタン・グラフ強調
+    on_accent: "#003544"
+    neutral:
+      900: "#1A1A1A"
+      700: "#4F4F4F"
+      500: "#8E8E8E"
+      300: "#D1D5DB"
+  dark_mode:
+    enabled: true
+    surface: "#10171E"
+    on_surface: "#E5E7EB"
+  gradients:
+    hero: "linear-gradient(135deg,#005BAC 0%,#26C6DA 100%)" # 動画なし fallback
+  usage_guidelines:
+    background:
+      default: "secondary"
+      dark: "surface"
+    text:
+      primary: "on_secondary"
+      inverse: "on_primary"
+    buttons:
+      primary_bg: "accent"
+      primary_text: "on_accent"
+    charts:
+      palette: ["#26C6DA","#FFC93C","#43A047","#EF5350"] # 色弱でも区別しやすい
+  accessibility:
+    contrast_standard: "WCAG 2.1 AA"
+    test_tool_hint: "Use @tailwindcss/typography's prose-a11y plugin or Storybook a11y addon"
+  logo_svg_path: "./assets/logo.svg"
+  favicon_path: "./public/favicon.png"
+
+typography:
+  base_font_family: >
+    'Inter',               # 英文・数字が読みやすい
+    'Noto Sans JP',        # 日本語汎用
+    'Hiragino Kaku Gothic ProN',
+    'Meiryo',
+    sans-serif
+  heading_font_family: >
+    'Zen Kaku Gothic New', # 視認性の高い可変幅ゴシック
+    'Noto Sans JP',
+    sans-serif
+  font_weights:
+    regular: 400
+    medium: 500
+    bold: 700
+  font_scale: 
+    h1: "text-[clamp(3rem,6vw,4.5rem)] font-bold leading-tight"
+    h2: "text-[clamp(2rem,4.5vw,3rem)] font-bold"
+    body: "text-base md:text-lg"
+  letter_spacing:         # 日本語詰まり感を緩和
+    headings: "-0.02em"
+    body: "0em"
+  line_height: 1.7        # 日本語段落ゆとり
+  font_loading:
+    strategy: "swap"      # CLS を避けつつ FOUT 許容
+    preload_subset: true  # h1/h2 用サブセット woff2
+
+layout:
+  base_grid: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+  scroll_behavior: "scroll-snap mandatory y"
+  breakpoints:
+    sm: 640
+    md: 768
+    lg: 1024
+    xl: 1280
+
+performance:
+  target_lighthouse_score: 95
+  lazy_load_images: true
+  critical_css_inline: true
+  bundle_budget_kb:
+    js: 180
+    css: 70
+
+interactions:
+  animation_library: "GSAP ScrollTrigger"
+  motion_reduced_fallback: true   # respects prefers-reduced-motion
+  keyboard_shortcuts:
+    next_section: "Space / ↓"
+    prev_section: "↑"
+
+accessibility:
+  aria_landmarks: true
+  focus_outline: "focus-visible ring-2 ring-accent"
+  lang_attribute: "ja"

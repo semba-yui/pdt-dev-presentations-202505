@@ -1,0 +1,69 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+meta:
+  site_type: "scroll-story"
+  stack: 
+    - Vite 6
+    - React 19
+    - TypeScript 5.8
+    - SWC
+    - TailwindCSS 4
+    - shadcn/ui
+    - GSAP
+  package_manager: "npm"
+
+directory_structure:
+  root:
+    - .vscode/
+    - public/
+    - src/
+        - assets/
+        - components/
+            - ui/
+            - common/
+        - sections/
+        - data/
+        - diagrams/
+        - hooks/
+        - styles/
+    - tailwind.config.cjs
+    - postcss.config.cjs
+    - vite.config.ts
+    - tsconfig.json
+    - .eslintrc.cjs
+    - .prettierrc.cjs
+    - README.md
+
+libraries:
+  runtime:
+    react: "^19.1.0"
+    react-dom: "^19.1.0"
+    class-variance-authority: "^0.7.1"
+    clsx: "^2.1.1"
+    lucide-react: "^0.511.0"
+    tailwind-merge: "^3.3.0"
+    gsap: "^3.13.0"
+    chart.js: "^4.4.9"
+    mermaid: "^11.6.0"
+  dev:
+    vite: "^6.3.5"
+    "@vitejs/plugin-react-swc": "^3.9.0"
+    typescript: "~5.8.3"
+    tailwindcss: "^4.1.7"
+    "@tailwindcss/cli": "^4.1.7"
+    "@tailwindcss/vite": "^4.1.7"
+    tailwindcss-animate: "^1.0.7"
+    postcss: "^8.5.3"
+    autoprefixer: "^10.4.21"
+    eslint: "^9.25.0"
+    "@eslint/js": "^9.25.0"
+    eslint-plugin-react-hooks: "^5.2.0"
+    eslint-plugin-react-refresh: "^0.4.19"
+    prettier: "^3.5.3"
+    typescript-eslint: "^8.30.1"
+    "@types/node": "^22.15.18"
+    "@types/react": "^19.1.2"
+    "@types/react-dom": "^19.1.2"
